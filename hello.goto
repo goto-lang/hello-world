@@ -1,0 +1,28 @@
+package main
+
+import (
+	"errors"
+)
+
+var _ = __fmt.Sprintf
+
+func Hello(name string) !string {
+	if name == "" {
+		return "", errors.New("empty name")
+	}
+
+	message := "Hi, \(name)!"
+	return message, nil
+}
+
+func Debug[T any](t T) string {
+	return "Debugging: \(t:#v)"
+}
+
+func Type[T any](t T) string {
+	return "Type: \( t   :T)"
+}
+
+func StringPointer(content string) ^string {
+	return &content
+}
