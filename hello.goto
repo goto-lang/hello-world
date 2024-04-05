@@ -4,8 +4,6 @@ import (
 	"errors"
 )
 
-var _ = __fmt.Sprintf
-
 func Hello(name string) !string {
 	if name == "" {
 		return "", errors.New("empty name")
