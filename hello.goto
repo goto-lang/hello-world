@@ -13,6 +13,14 @@ func Hello(name string) !string {
 	return message, nil
 }
 
+func Always20() string {
+	return "Always 20: \((6 + 2) * 2 + 4)"
+}
+
+func Doubled(num int) string {
+	return "Number doubled: \(2 * num)"
+}
+
 func Debug[T any](t T) string {
 	return "Debugging: \(t:#v)"
 }

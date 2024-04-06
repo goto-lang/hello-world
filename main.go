@@ -14,5 +14,7 @@ func main() {
 	pointer := StringPointer(name)
 	println(Type(pointer))
 	println(Debug(pointer))
+	println(Doubled(5))
+	println(Always20())
 }
 
