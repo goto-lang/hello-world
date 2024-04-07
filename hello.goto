@@ -9,7 +9,7 @@ func Hello(name string) !string {
 		return "", errors.New("empty name")
 	}
 
-	message := "Hi, \("somebody " + name)!"
+	message := "Hi, \("(your name is \(name), right?) " + name)!"
 	return message, nil
 }
 
